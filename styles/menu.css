@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.tabs button {
+  background-color: transparent;
+  border: 2px solid var(--text);
+  color: var(--text);
+  font-size: 1.2rem;
+  padding: 5px 25px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content:target {
+  display: block;
+}
+
+.tab-content:first-of-type {
+  display: block;
+}
+
+.tab-btn {
+  background-color: transparent;
+  border: 2px solid var(--text);
+  color: var(--text);
+  font-size: 1.2rem;
+  padding: 5px 25px;
+  border-radius: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.tab-btn:focus,
+.tab-btn:hover {
+  background-color: var(--text);
+  color: var(--bg-main);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  padding: 30px 20px;
+  border-radius: 16px;
+  border: 1px dashed #537d5d;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 40%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.card .card-content {
+  padding-left: 25px;
+  text-align: left;
+}
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--card-bg);
+  margin-bottom: 15px;
+}
+
+.view-btn {
+  background-color: var(--bg-main);
+  border: 2px solid var(--text);
+  color: var(--text);
+  margin-top: 20px;
+  padding: 5px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  /* background-color: ; */
+  color: #000;
+}
+
+#sliders{
+  margin-top: 100px;
+}
+#sliders h2{
+  margin-bottom: 50px;
+}
+.carousel{
+  border: 5px solid var(--footer);
+}
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.carousel-caption{
+  color: var(--text);
+  backdrop-filter: blur(5px);
+  background-color: var(--bg-main);
+}
+
+.carousel-caption h5{
+  font-size: 2rem;
+}
+.carousel-caption p{
+  font-size: 1.5rem;
+}
