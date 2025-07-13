@@ -214,7 +214,7 @@ h6 {
 
 /* Main Content Styles */
 .main-content {
-  padding: 5rem 0;
+  padding-top: 5rem;
   position: relative;
 }
 
@@ -259,4 +259,29 @@ h6 {
 .btn-outline-light:hover {
   background-color: white;
   color: var(--text);
+}
+
+.bg-accent {
+  background-color: var(--accent) !important;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #5a362f;
+  color: white;
+}
+
+.btn-outline-accent {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline-accent:hover {
+  background-color: var(--accent);
+  color: white;
 }
