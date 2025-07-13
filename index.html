@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Canteen Corner - Home</title>
+    <title>Home | Canteen Corner</title>
     <link rel="shortcut icon" href="./images/layout_logo.svg" type="image/x-icon" />
 
     <!-- Custom CSS -->
@@ -35,7 +35,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
+              <a class="nav-link" href="menu.html#breakfast">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="delivery.html">Delivery</a>
@@ -54,11 +54,379 @@
       </div>
     </nav>
 
+    <!-- Announcement Ticker -->
+    <div class="announcement-ticker">
+      <div class="ticker-content">
+        <span class="ticker-icon"><i class="bi bi-megaphone-fill"></i></span>
+        <span class="ticker-text">Exam week specials! 20% off all combo meals from 3pm-6pm!</span>
+      </div>
+    </div>
+
     <!-- Main Content -->
     <main class="main-content">
       <div class="container">
-        <section class="">
-          <h2 class="section-title"></h2>
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto text-center">
+                <h1 class="fw-bold mb-4">Welcome to Canteen Corner</h1>
+                <p class="lead mb-5">Where culinary delights meet campus life</p>
+                <div class="d-flex gap-3 justify-content-center">
+                  <a href="menu.html#breakfast" class="btn btn-light btn-lg px-4 py-2"
+                    >Explore Menu</a
+                  >
+                  <a href="delivery.html" class="btn btn-outline-light btn-lg px-4 py-2"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section pt-5">
+          <div class="container">
+            <h2 class="section-title mb-5">Why Choose Canteen Corner?</h2>
+            <div class="row g-5 text-center">
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <div class="feature-icon-wrapper mb-3">
+                    <i class="bi bi-egg-fried feature-icon"></i>
+                  </div>
+                  <h3 class="h4 mb-3">Authentic Flavors</h3>
+                  <p class="mb-0">Traditional Burmese recipes with original ingredients</p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <div class="feature-icon-wrapper mb-3">
+                    <i class="bi bi-wallet2 feature-icon"></i>
+                  </div>
+                  <h3 class="h4 mb-3">Student Prices</h3>
+                  <p class="mb-0">Affordable campus pricing for authentic Burmese cuisine</p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <div class="feature-icon-wrapper mb-3">
+                    <i class="bi bi-speedometer2 feature-icon"></i>
+                  </div>
+                  <h3 class="h4 mb-3">Quick Service</h3>
+                  <p class="mb-0">Fast service designed around your class schedule</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured Dishes Carousel -->
+        <section class="carousel-container">
+          <h2 class="section-title">Featured Burmese Dishes</h2>
+          <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#featuredCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#featuredCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#featuredCarousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item active"
+                style="background-image: url('./images/home/mohinga.jpg')"
+              >
+                <div class="carousel-caption">
+                  <h3>Mohinga</h3>
+                  <p>Myanmar's national dish - rice noodle soup with fish broth and herbs</p>
+                  <p class="h4">Ks. 1500 <small class="text-warning">(Morning Special)</small></p>
+                </div>
+              </div>
+              <div
+                class="carousel-item"
+                style="background-image: url('./images/home/tea-leaf.png')"
+              >
+                <div class="carousel-caption">
+                  <h3>Tea Leaf Salad (Lahpet Thoke)</h3>
+                  <p>Fermented tea leaves with crispy beans, nuts, and sesame seeds</p>
+                  <p class="h4">Ks. 1800 <small class="text-warning">(Signature Dish)</small></p>
+                </div>
+              </div>
+              <div class="carousel-item" style="background-image: url('./images/home/noodle.jpg')">
+                <div class="carousel-caption">
+                  <h3>Ohn No Khao Swè</h3>
+                  <p>Coconut chicken noodles with boiled egg and crispy toppings</p>
+                  <p class="h4">Ks. 2000 <small class="text-warning">(Best Seller)</small></p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#featuredCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#featuredCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="d-flex justify-content-center align-items-center mt-4">
+            <a href="menu.html#breakfast" class="btn btn-md btn-outline-accent"
+              >View Full Menu <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </section>
+
+        <!-- Menu Highlights -->
+        <section class="mb-5 py-5">
+          <h2 class="section-title">This Week's Burmese Specials</h2>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="menu-highlight p-4 h-100">
+                <h3 class="text-center mb-4">
+                  <i class="bi bi-star-fill me-2"></i>Chef's Recommendations
+                </h3>
+                <div class="menu-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Mohinga</h4>
+                    <span class="badge bg-light text-dark">Ks. 1500</span>
+                  </div>
+                  <p class="mb-0">Myanmar's national breakfast noodle soup with fish broth</p>
+                </div>
+                <div class="menu-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Shan Noodles</h4>
+                    <span class="badge bg-light text-dark">Ks. 1300</span>
+                  </div>
+                  <p class="mb-0">Rice noodles with chicken or pork in tomato sauce</p>
+                </div>
+                <div class="menu-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Mont Lone Yay Paw</h4>
+                    <span class="badge bg-light text-dark">Ks. 800</span>
+                  </div>
+                  <p class="mb-0">Sweet glutinous rice balls with coconut</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-highlight p-4 h-100">
+                <h3 class="text-center mb-4">
+                  <i class="bi bi-heart-fill me-2"></i>Healthy Choices
+                </h3>
+                <div class="menu-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Tea Leaf Salad</h4>
+                    <span class="badge bg-light text-dark">Ks. 1800</span>
+                  </div>
+                  <p class="mb-0">Fermented tea leaves with assorted crunchy toppings</p>
+                </div>
+                <div class="menu-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Vegetable Curry Set</h4>
+                    <span class="badge bg-light text-dark">Ks. 2000</span>
+                  </div>
+                  <p class="mb-0">Seasonal vegetables in light curry with rice</p>
+                </div>
+                <div class="menu-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Fresh Fruit Plate</h4>
+                    <span class="badge bg-light text-dark">Ks. 1000</span>
+                  </div>
+                  <p class="mb-0">Seasonal tropical fruits with lime and chili salt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Delivery -->
+        <section class="delivery mb-5 py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-lg-0 ps-5">
+              <h2 class="section-title text-start">Hungry? We Deliver!</h2>
+              <p class="lead">
+                Get your favorite Burmese dishes delivered right to your dorm or classroom.
+              </p>
+              <p>Enjoy quick service and special student pricing for all delivery orders.</p>
+              <a href="delivery.html" class="btn btn-accent mt-3">Order Delivery Now</a>
+            </div>
+            <div class="col-lg-5">
+              <img src="/images/home/delivery.png" alt="Delivery service" class="img-fluid" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="mb-5 py-5">
+          <h2 class="section-title">What Students Say</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <div class="d-flex mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p>
+                  "The mohinga here tastes just like my grandmother makes it! Perfect way to start
+                  my day."
+                </p>
+                <p class="testimonial-author">- Hla Hla, History Department</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <div class="d-flex mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p>
+                  "As an international student, this canteen helps cure my homesickness with
+                  authentic Burmese flavors."
+                </p>
+                <p class="testimonial-author">- Aung Ko, Engineering</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <div class="d-flex mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                </div>
+                <p>
+                  "Great place to try Burmese food between classes. The tea leaf salad is
+                  addictive!"
+                </p>
+                <p class="testimonial-author">- Mi Mi, Economics</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About us -->
+        <section class="about py-5">
+          <div class="container">
+            <div class="row align-items-center gx-5">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="/images/home/team.jpg" alt="Our team" class="img-fluid rounded-5" />
+              </div>
+              <div class="col-lg-6">
+                <h2 class="section-title text-start">Meet Our Team</h2>
+                <p>
+                  Our passionate team brings authentic Burmese flavors to campus with years of
+                  culinary experience.
+                </p>
+                <div class="d-flex align-items-center mt-4">
+                  <div class="border-start border-3 ps-4">
+                    <p class="mb-1">
+                      <i class="bi bi-star-fill text-warning"></i> 100+ Student Reviews
+                    </p>
+                    <p class="mb-0">
+                      <i class="bi bi-award-fill text-accent"></i> Campus Choice Award 2024
+                    </p>
+                  </div>
+                </div>
+                <a href="about.html" class="btn btn-accent mt-4">Our Story</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- News & Events -->
+        <section class="py-5">
+          <h2 class="section-title">News & Events</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="news-card p-4 h-100">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <span class="badge bg-accent text-white">News</span>
+                  <small class="text-muted">May 15, 2025</small>
+                </div>
+                <h4>New Menu Items Added!</h4>
+                <p>
+                  We've expanded our menu with 5 new authentic Burmese dishes. Try our special
+                  Shan-style rice today!
+                </p>
+                <a href="menu.html#breakfast" class="btn btn-sm btn-outline-accent mt-2"
+                  >View Menu</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="news-card p-4 h-100">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <span class="badge bg-warning text-dark">Event</span>
+                  <small class="text-muted">June 2-6, 2025</small>
+                </div>
+                <h4>Cultural Food Festival</h4>
+                <p>
+                  Join us for our annual Burmese Food Festival with live music, cooking demos, and
+                  special discounts!
+                </p>
+                <a href="event.html" class="btn btn-sm btn-outline-accent mt-2">Learn More</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="news-card p-4 h-100">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <span class="badge bg-accent text-white">Promo</span>
+                  <small class="text-muted">Ongoing</small>
+                </div>
+                <h4>Student Meal Plans</h4>
+                <p>
+                  Sign up for our new meal plan program and save up to 20% on your daily meals.
+                  Perfect for busy students!
+                </p>
+                <a href="contact.html" class="btn btn-sm btn-outline-accent mt-2">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <a href="event.html" class="btn btn-accent px-4">View All Events</a>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="py-5">
+          <div class="container text-center">
+            <h2 class="section-title">Have Questions?</h2>
+            <p class="lead mb-4">
+              We're here to help with any questions about our menu, delivery, or events.
+            </p>
+            <a href="contact.html" class="btn btn-accent btn-md px-4 mx-auto">Contact Us</a>
+          </div>
         </section>
       </div>
     </main>
@@ -76,8 +444,8 @@
             <ul class="footer-links d-flex flex-row gap-4">
               <div>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="delivery.html">Order</a></li>
+                <li><a href="menu.html#breakfast">Menu</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
               </div>
               <div>
                 <li><a href="about.html">About</a></li>
