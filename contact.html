@@ -114,7 +114,41 @@
           <h2 class="section-title">Feedback Section</h2>
 
           <div id="feedback">
-            <div class="fb-form"></div>
+            <div class="fb-form">
+              <div class="feedback-wrapper">
+                <div class="feedback-card">
+                  <p class="subtext">Your opinion helps improve our food & service!</p>
+                  <form action="" class="form">
+                    <div class="form-group with-icon">
+                      <i class="bi bi-person-fill"></i>
+                      <input type="text" id="name" name="name" required />
+                      <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group with-icon">
+                      <i class="bi bi-envelope-fill"></i>
+                      <input type="email" id="email" name="email" required />
+                      <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group with-icon">
+                      <i class="bi bi-fork-knife"></i>
+                      <input type="text" list="foods" name="food" id="food" />
+                      <label for="food">How's the food?</label>
+                      <datalist id="foods">
+                        <option value="Delicious"></option>
+                        <option value="Okay"></option>
+                        <option value="Needs Improvement"></option>
+                      </datalist>
+                    </div>
+                    <div class="form-group with-icon">
+                      <i class="bi bi-hand-thumbs-up-fill" style="top: 25%"></i>
+                      <textarea name="comment" id="comment" rows="4" required></textarea>
+                      <label for="comment">Write your feedback...</label>
+                    </div>
+                    <button type="submit"><i class="bi bi-send-fill"></i>Submit Feedback</button>
+                  </form>
+                </div>
+              </div>
+            </div>
 
             <div class="fb-review">
               <div>

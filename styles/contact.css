@@ -3,11 +3,13 @@ aside {
   width: 30%;
   height: 350px;
   background-color: #fdfaf8;
-  margin-left: 30px;
-  margin-top: 30px;
   border-radius: 10%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   border: 3px solid var(--text);
+}
+
+.aside {
+  margin: 50px 30px 30px 80px;
 }
 
 .contactinfo {
@@ -26,9 +28,7 @@ aside {
 .map {
   width: 50%;
   height: 350px;
-
-  margin-top: 30px;
-  margin-left: 80px;
+  margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -44,13 +44,12 @@ aside {
 /* feedback */
 #feedback {
   width: 100%;
-  height: 500px;
+  height: auto;
 
   display: flex;
 }
 .fb-form {
   width: 40%;
-  height: 500px;
 }
 
 #feedback .fb-review {
@@ -100,7 +99,6 @@ aside {
   border-radius: 8px;
   margin: 20px auto;
   max-width: 500px;
-  box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
   background-color: var(--text);
 }
 .part-1 {
@@ -239,4 +237,124 @@ aside {
 }
 input {
   accent-color: var(--footer);
+}
+
+/* feedback form */
+.feedback-wrapper {
+  width: 100%;
+  max-width: 480px;
+}
+.feedback-card {
+  backdrop-filter: blur(10px);
+  padding: 30px 25px;
+  border-radius: 16px;
+}
+.feedback-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+.subtext {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  color: var(--accent);
+}
+.fb-form .form {
+  position: relative;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.fb-form .form-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+.fb-form .form-group input,
+.fb-form .form-group textarea {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+  background: white;
+  padding-right: 10px;
+  color: var(--accent);
+  border: 1px solid var(--bg-main);
+}
+.fb-form .form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.fb-form .form-group input:focus,
+.fb-form .form-group textarea:focus {
+  border-color: var(--accent);
+}
+
+.fb-form .form-group label {
+  position: absolute;
+  top: 13px;
+  left: 38px;
+  color: var(--bg-main);
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: 0.3s;
+  padding: 0 4px;
+}
+
+.fb-form input:focus + label,
+.fb-form .form-group input:not(:placeholder-shown) + label,
+.fb-form .form-group textarea:focus + label,
+.fb-form .form-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 34px;
+  font-size: 0.8rem;
+  color: var(--bg-main);
+}
+.with-icon i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+.fb-form .form-group i {
+  font-size: 1rem;
+  left: 10px;
+}
+
+.fb-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: var(--bg-main);
+  color: var(--accent);
+  font-size: 1erm;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.fb-form button:hover {
+  background: var(--card-bg);
+}
+.fb-form button i {
+  margin-right: 6px;
+}
+
+@media (max-width: 480px) {
+  .feedback-card {
+    padding: 25px 20px;
+  }
+}
+
+.fb-form .form-group label {
+  left: 36px;
+}
+
+.fb-form .form-group .food {
+  padding-left: 30px;
 }
