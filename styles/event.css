@@ -1,129 +1,103 @@
- body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: #fff8f0;
-      color: #333;
-    }
+main .container {
+  max-width: 1000px;
+  margin: 40px auto;
+  margin-top: 0;
+  padding: 0 20px;
+}
 
-    header {
-      background: url('https://source.unsplash.com/1600x400/?food-party') center/cover no-repeat;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-    }
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 5rem;
+}
 
-    header h1 {
-      font-size: 3rem;
-    }
+.event {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
 
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
+.calendar-box {
+  background: #fff;
+  border: 2px solid #f1a661;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
 
-    .events {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
+.calendar-box .month {
+  background: #f1a661;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
 
-    .event {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
-    }
-    
+.calendar-box .day {
+  font-size: 2rem;
+  margin: auto 0;
+  font-weight: bold;
+}
 
-    .calendar-box {
-      background: #fff;
-      border: 2px solid #f1a661;
-      width: 100px;
-      height: 100px;
-      text-align: center;
-      border-radius: 8px;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-    }
+.info h3 {
+  margin: 0 0 5px;
+  color: #333;
+}
 
-    .calendar-box .month {
-      background: #f1a661;
-      color: white;
-      padding: 5px;
-      font-weight: bold;
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
-    }
+.info p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
 
-    .calendar-box .day {
-      font-size: 2rem;
-      margin: auto 0;
-      font-weight: bold;
-    }
+@media (max-width: 700px) {
+  .event {
+    flex-direction: column;
+    text-align: center;
+  }
+  .calendar-box {
+    margin-bottom: 10px;
+  }
+}
+.event-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.event-photos img {
+  width: 100%;
+  border-radius: 8px;
+}
 
-    .info h3 {
-      margin: 0 0 5px;
-      color: #333;
-    }
+/* KSH */
+.rsvp-btn {
+  text-decoration: none;
+  background-color: var(--card-bg);
+  color: var(--accent);
+  border: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
-    .info p {
-      margin-bottom: 20px;
-      line-height: 1.5;
-    }
+.rsvp-btn:hover {
+  background-color: var(--text);
+  color: var(--bg-main);
+  transform: scale(1.05);
+}
 
-    @media (max-width: 700px) {
-      .event {
-        flex-direction: column;
-        text-align: center;
-      }
-      .calendar-box {
-        margin-bottom: 10px;
-      }
-    }
-    .event-photos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      
-    }
-    .event-photos img {
-      width: 100%;
-      border-radius: 8px;
-      
-    }
-    footer {
-      text-align: center;
-      color: #777;
-      padding: 20px;
-    }
-
-    /* KSH */
-    .rsvp-btn {
-      text-decoration: none;
-      background-color: #b19470;   
-      color: #76453b;               
-      border: none;                
-      padding: 8px 18px;         
-      font-size: 16px;              
-      border-radius: 8px;          
-      cursor: pointer;              
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .rsvp-btn:hover {
-      background-color: #537d5d; 
-      transform: scale(1.05);       
-    }
-
-    /* body {
+/* body {
       margin: 0;
       padding: 0;
       background-color: #FFFBDE;
@@ -132,52 +106,52 @@
       align-items: center;
       height: 100vh;
     } */
-    .manual-carousel-wrapper {
-      position: relative;
-      width: 75%;
-      aspect-ratio: 16 / 10;
-      margin: 40px auto;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
+.manual-carousel-wrapper {
+  position: relative;
+  width: 75%;
+  aspect-ratio: 16 / 10;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
 
-    .manual-carousel {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      height: 100%;
-    }
+.manual-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
 
-    .carousel-slide {
-      width: 100%;
-      flex-shrink: 0;
-      object-fit: cover;
-    }
+.carousel-slide {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
 
 /* Navigation Buttons */
-    .carousel-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(70, 130, 169, 0.8);
-      color: white;
-      border: none;
-      padding: 10px 16px;
-      font-size: 24px;
-      cursor: pointer;
-      z-index: 10;
-      border-radius: 50%;
-      transition: background-color 0.3s ease;
-    }
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(70, 130, 169, 0.8);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
 
-    .carousel-btn:hover {
-      background-color: rgba(116, 155, 194, 0.9);
-    }
+.carousel-btn:hover {
+  background-color: rgba(116, 155, 194, 0.9);
+}
 
-    .carousel-btn.left {
-      left: 10px;
-    }
+.carousel-btn.left {
+  left: 10px;
+}
 
-    .carousel-btn.right {
-      right: 10px;
-    }
+.carousel-btn.right {
+  right: 10px;
+}

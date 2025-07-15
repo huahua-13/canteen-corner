@@ -1,63 +1,55 @@
- body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-main);
-      color: var(--text);
-    }
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1100px;
+  gap: 30px;
+  padding: 0 20px;
+}
 
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 40px auto;
-      max-width: 1100px;
-      gap: 30px;
-      padding: 0 20px;
-    }
-    
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .card {
-      background-color: #fff;
-      border-radius: 16px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-      padding: 30px;
-      width: 300px;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    }
+.card h2 {
+  --text: #76453b;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
 
-    .card h2 {
-      --text: #76453b;;
-      font-size: 24px;
-      margin-bottom: 15px;
-    }
+.card p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
-    .card p {
-        color: #555;
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
+.card button {
+  background-color: #537d5d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-   .card button {
-      background-color:#537d5d;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .card button:hover {
-      background-color: #204328;
-    }
-     /* FAQ Section Styles */
+.card button:hover {
+  background-color: #204328;
+}
+/* FAQ Section Styles */
 .faq-section {
   background-color: var(--bg-main);
 }
@@ -102,8 +94,8 @@
     padding: 1rem;
   }
 }
-    /* Delivery Customer Feedback */
-    .testimonial-card {
+/* Delivery Customer Feedback */
+.testimonial-card {
   background-color: white;
   border-radius: 15px;
   padding: 2rem;
