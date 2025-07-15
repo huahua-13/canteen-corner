@@ -58,10 +58,135 @@
     <main class="main-content">
       <div class="container">
         <section class="">
-          <h2 class="section-title"></h2>
+          <header>
+      <h1 class="section-title">University Canteen Events</h1>
+    </header>
+      <!-- <h2>Cultural Food Day</h2> -->
+
+    <div class="container">
+      <h2>Upcoming Events 🍜☕🎤🍰</h2>
+      
+      <div class="events">
+        <!-- Noodles Party -->
+        <div class="event">
+          <div class="calendar-box">
+            <div class="month">JUL</div>
+            <div class="day">20</div>
+          </div>
+          <div class="info">
+            <h3>Noodles Night</h3>
+            <p>Slurp and socialize with unlimited noodles and soup bar!<br>
+              
+              🕒 6:00 PM - 10:00 PM</p>
+              <a href="rvsp.html" target="comfrim" class="rsvp-btn">Reserve Spot</a>
+          </div>
+          <div class="event-photos">
+        <img src="images/pork noddle.jfif" alt="Noodle ">
+        <img src="images/egg&pork noddle.jfif" alt="Noodle ">
+        
+      </div>
+        </div>
+
+        <!-- Coffee Meetup -->
+        <div class="event">
+          <div class="calendar-box">
+            <div class="month">AUG</div>
+            <div class="day">5</div>
+          </div>
+          <div class="info">
+            <h3>Coffee Day</h3>
+            <p>Try new brews, latte art & chill vibes.<br>
+              
+              🕒 10:00 AM - 1:00 PM</p>
+              <a href="rvsp.html" target="comfrim" class="rsvp-btn">Reserve Spot</a>
+          </div>
+          <div class="event-photos">
+        <img src="images/latte.jpg" alt="coffee ">
+        <img src="images/ice coffee.jpg" alt="ice ">
+      </div>
+        </div>
+
+        <!-- Karaoke Night -->
+        <div class="event">
+          <div class="calendar-box">
+            <div class="month">AUG</div>
+            <div class="day">18</div>
+          </div>
+          <div class="info">
+            <h3>Karaoke Night 🎤</h3>
+            <p>Sing your heart out with friends & snacks!<br>
+              
+              🕒 7:00 PM - 11:00 PM</p>
+              <a href="rvsp.html" target="comfrim" class="rsvp-btn">Reserve Spot</a>
+          </div>
+          <div class="event-photos">
+        <img src="images/karaoke.jpg" alt="mic ">
+        
+      </div>
+        </div>
+
+        <!-- Free Dessert Recipe  -->
+        <div class="event">
+          <div class="calendar-box">
+            <div class="month">SEP</div>
+            <div class="day">2</div>
+          </div>
+          <div class="info">
+            <h3>Free Dessert recipes 🍰</h3>
+            <p>You can enjoy delicious desserts as much as you like.<br>
+              
+              🕒 2:00 PM - 4:00 PM</p>
+              <a href="rvsp.html" target="comfrim" class="rsvp-btn">Reserve Spot</a>
+          </div>
+          <div class="event-photos">
+        <img src="images/strawbery cake.jpg" alt="cake ">
+        <img src="images/cookie.jpg" alt="cookie ">
+        
+      </div>
+    </div>
+    <h2 style="text-align: center; color: #76453b;">Highlights from Previous Events 📸</h2>
+
+    <div class="manual-carousel-wrapper">
+      <button class="carousel-btn left" onclick="prevSlide()">❮</button>
+
+      <div class="manual-carousel">
+        <img class="carousel-slide" src="images/enjoying have a launch.jpg" alt="enjoying having a launch">
+        <img class="carousel-slide" src="images/dinner party.jpg" alt="dinner party">
+        <img class="carousel-slide" src="images/karaoke night.jpg" alt="karaoke Night">
+        <img class="carousel-slide" src="images/tea time.jpg" alt="tea time">
+      </div>
+
+      <button class="carousel-btn right" onclick="nextSlide()">❯</button>
+    </div>
+
+    <script>
+    const carousel = document.querySelector('.manual-carousel');
+    const slides = document.querySelectorAll('.carousel-slide');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      if (index < 0) index = slides.length - 1;
+      if (index >= slides.length) index = 0;
+
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+      currentIndex = index;
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+    showSlide(0);
+  </script>
         </section>
       </div>
     </main>
+
+    
+
 
     <!-- Footer -->
     <footer class="footer">
