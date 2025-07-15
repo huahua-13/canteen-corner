@@ -61,6 +61,38 @@ aside {
 #feedback .fb-review div {
   padding-left: 30px;
 }
+@media (max-width: 910px) {
+  #feedback {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #feedback .fb-review {
+    flex-direction: column;
+  }
+
+  #feedback .fb-review div {
+    padding-left: 10px;
+  }
+
+  .aside {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    margin: auto;
+    margin-top: 50px;
+  }
+  aside {
+    width: auto;
+  }
+  .map {
+    width: auto;
+  }
+  .fb-form {
+    width: auto;
+  }
+}
 
 /* Volunteer Section */
 .body h2 {
