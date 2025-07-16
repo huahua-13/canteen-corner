@@ -65,7 +65,7 @@
 
 .hero-section {
   background: linear-gradient(rgba(83, 125, 93, 0.3), rgba(83, 125, 93, 0.4)),
-    url("/images/home/canteen-hero.jpg") no-repeat center center;
+    url("../images/home/canteen-hero.jpg") no-repeat center center;
   background-size: cover;
   height: calc(100vh - var(--nav-height));
   display: flex;
