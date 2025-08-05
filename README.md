@@ -19,7 +19,7 @@ A responsive canteen website built with Bootstrap 5 featuring:
 ✅ Fully responsive design  
 ✅ Bootstrap components (Carousel, Cards, Forms)  
 ✅ Collaborative GitHub workflow  
-✅ Hosted live on Netlify
+✅ Hosted live on Render
 
 ## Pages Structure
 

@@ -8,33 +8,38 @@
 
 
 <url>
-  <loc>https://canteen-corner.netlify.app/</loc>
-  <lastmod>2025-08-05T09:19:48+00:00</lastmod>
+  <loc>https://canteen-corner.onrender.com/</loc>
+  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.netlify.app/menu</loc>
-  <lastmod>2025-08-05T09:19:48+00:00</lastmod>
+  <loc>https://canteen-corner.onrender.com/index.html</loc>
+  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.netlify.app/delivery</loc>
-  <lastmod>2025-08-05T09:19:48+00:00</lastmod>
+  <loc>https://canteen-corner.onrender.com/menu.html</loc>
+  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.netlify.app/about</loc>
-  <lastmod>2025-08-05T09:19:48+00:00</lastmod>
+  <loc>https://canteen-corner.onrender.com/delivery.html</loc>
+  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.netlify.app/event</loc>
-  <lastmod>2025-08-05T09:19:48+00:00</lastmod>
+  <loc>https://canteen-corner.onrender.com/about.html</loc>
+  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.netlify.app/contact</loc>
-  <lastmod>2025-08-05T09:19:48+00:00</lastmod>
+  <loc>https://canteen-corner.onrender.com/event.html</loc>
+  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://canteen-corner.onrender.com/contact.html</loc>
+  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
