@@ -1,47 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://canteen-corner.onrender.com/</loc>
-  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://canteen-corner.onrender.com/</loc>
+	<lastmod>2025-08-05T13:08:33+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.onrender.com/index.html</loc>
-  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://canteen-corner.onrender.com/index.html</loc>
+	<lastmod>2025-08-05T13:08:33+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.onrender.com/menu.html</loc>
-  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://canteen-corner.onrender.com/menu.html</loc>
+	<lastmod>2025-08-05T13:08:33+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.onrender.com/delivery.html</loc>
-  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://canteen-corner.onrender.com/delivery.html</loc>
+	<lastmod>2025-08-05T13:08:33+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.onrender.com/about.html</loc>
-  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://canteen-corner.onrender.com/about.html</loc>
+	<lastmod>2025-08-05T13:08:33+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.onrender.com/event.html</loc>
-  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://canteen-corner.onrender.com/event.html</loc>
+	<lastmod>2025-08-05T13:08:33+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://canteen-corner.onrender.com/contact.html</loc>
-  <lastmod>2025-08-05T09:47:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://canteen-corner.onrender.com/contact.html</loc>
+	<lastmod>2025-08-05T13:08:33+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
-
-
 </urlset>
